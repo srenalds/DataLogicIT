@@ -1,0 +1,131 @@
+html {
+    background: #F1F1D4;
+}
+
+#pheader {
+    color: darkgreen;
+    font-size: 18px;
+}
+#pname {
+    float: left;
+    font-weight: bold;
+}
+#pname a {
+    color: darkgreen;
+}
+#pdate {
+    float: right;
+}
+#pauthor {
+    float: left;
+}
+#pexcerpt {
+    color: darkgreen;
+    border-top: 1px solid #676767;
+    border-radius: 5px;
+}
+#pcontent {
+    color: black;
+    margin-top: 36px;
+    border-top: 1px solid #676767;
+    border-radius: 5px;
+}
+#acontent {
+    color: black;
+    border-top: 1px solid #676767;
+    border-radius: 5px;
+}
+.md-toolbar-tools {
+    background: #F1F1D4;
+    border: 2px solid #676767;
+    border-radius: 2px;
+    min-height: 90px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.md-toolbar-tools h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: inherit;
+}
+.md-toolbar-tools img {
+    text-align: center;
+    max-width: 98%;
+    max-height: 80px;
+    min-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+}
+
+#middle {
+min-height:85%;
+}
+#postctrl {
+background: #F2F2F2;
+overflow: auto;
+}
+#archives {
+background: #F2F2F2;
+overflow: auto;
+}
+#sideNav {
+max-width: 300px;
+background: #F2F2F2;
+color: darkgreen;
+height: auto;
+overflow-x: scroll;
+overflow-y: hidden;
+background: #F2F2F2;
+}
+#sideNav .md-button {
+width: 90%
+}
+#arrows {
+width: 100%;
+height: auto;
+padding-top: 0;
+}
+#togLeft {
+text-align: left;
+float: left;
+}
+#togRight {
+align-text: left;
+float: right;
+}
+#twitter {
+background: #F2F2F2;
+color: darkgreen;
+width: 98%;
+height: auto;
+overflow-x: scroll;
+overflow-y: hidden;
+}
+#twitter .md-button {
+width: 90%;
+}
+#twitter p {
+color: darkgreen;
+}
+#twitter a {
+color: darkgreen;
+}
+.navButton {
+    width: 100%;
+}
+.navButton a {
+color: white;
+}
+.subMenu {
+  width: 100%;
+}
+.subMenu .navButton {
+    width: 90%;
+}
+.subMenu .navButton a {
+color: white;
+font-weight: bold;
+}

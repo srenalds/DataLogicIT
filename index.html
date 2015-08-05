@@ -1,0 +1,62 @@
+<html lang="en" ng-app="DataLogicIT">
+  <head>
+    <link rel="stylesheet" href="css/angular-material.min.css">
+    <link rel="stylesheet" href="css/material-styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <meta name="viewport" content="initial-scale=1" />
+  </head>
+  <body layout="column" ng-controller="webAppController">
+    <md-toolbar md-scroll-shrink layout="row">
+      <div class="md-toolbar-tools">
+          <img src="img/DataLogicitLogo.png" alt="DataLogicIT" title="DataLogic Information Technologies"/>
+        <md-button ng-click="toggleRight()" class="md-icon-button md-primary md-hue-2">
+          <md-icon aria-label="Twitter Bar" md-svg-icon="img/icons/twitter.svg"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+      <div layout="column" layout-align="start start">
+      <md-menu>
+        <md-button aria-label="About Menu" class="md-icon-button" ng-click="$mdOpenMenu()">
+          <md-icon md-menu-origin md-svg-icon="img/icons/ic_chevron_right_black_24px.svg"></md-icon>ABOUT
+        </md-button>
+        <md-menu-content width="4">
+          <md-menu-item>
+            <md-button class="md-primary md-hue-2 md-raised" aria-label="About Menu">
+              <md-icon md-svg-icon="img/icons/ic_chevron_right_black_24px.svg" md-menu-align-target></md-icon>
+              DataLogicIT
+            </md-button><br>
+            <md-button class="md-primary md-hue-2 md-raised" aria-label="About Menu">
+              <md-icon md-svg-icon="img/icons/ic_chevron_right_black_24px.svg" md-menu-align-target></md-icon>
+              This Site 
+            </md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+    </div>
+    <div layout="row" flex>
+      <md-content layout="column" flex class="md-padding md-primary">
+        <div ng-view></div>
+      </md-content>
+      <md-sidenav layout="column" flex class="md-sidenav-right md-padding md-whiteframe-z5" md-component-id="right" md-is-locked-open="lockRight && $mdMedia('gt-lg')">
+        <md-content layout-padding>
+          <a class="twitter-timeline" data-widget-id="623500289316814848" ng-href="https://twitter.com/DataLogicIT" data-screen-name="DataLogicIT">Tweets by DataLogicIT</a>
+          <a class="twitter-follow-button" href="https://twitter.com/DataLogicIT" data-size="large">
+Follow @DataLogicIT</a>
+          <p><b>For what can't be said in 140 characters: <script src="js/email.js"></script></b></p>
+          <md-button ng-click="toggleRight()" hide-gt-lg class="md-raised md-primary md-hue-2">Close</md-button>
+        </md-content>
+      </md-sidenav>
+    </div>
+  </div>
+</div>
+    <!-- Angular Material Dependencies -->
+    <script src="js/angular/angular.min.js"></script>
+    <script src="js/angular/angular-animate.min.js"></script>
+    <script src="js/angular/angular-aria.min.js"></script>
+    <script src="js/angular/angular-material.min.js"></script>
+    <script src="js/angular/angular-sanitize.min.js"></script>
+    <script src="js/angular/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/twitter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+html {
+    font-family: "lucida console","arial","verdana";
+}
+
+#DisplayRecentExcerpts {
+    background: #F1F1D4;
+    width: 58%;
+    height: 400px;
+    border: 2px solid #676767;
+    border-radius: 2px;
+    box-shadow: 0 0 10px 0px #111111;
+    overflow: auto;
+}
+
+#DisplayRecentExcerpts #pname {
+    float: left;
+}
+#DisplayRecentExcerpts #pdate {
+    float: right;
+}
+#DisplayRecentExcerpts #hdr {
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding-left: 5px;
+    margin-right: 5px;
+    padding-right: 5px;
+    border-bottom: 2px solid #676767;
+}
+#DisplayRecentExcerpts #pexcerpt {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 15px;
+}

@@ -1,0 +1,33 @@
+<body ng-app="DataLogicIT">
+<div ng-controller="GridViewController">
+  <md-content layout-padding>
+    <md-grid-list
+        md-cols-gt-md="12" md-cols-sm="3" md-cols-md="8"
+        md-row-height-gt-md="1:1" md-row-height="4:3"
+        md-gutter-gt-md="16px" md-gutter-gt-sm="8px" md-gutter="4px"`>
+      <md-grid-tile 
+          ng-repeat="tile in ColorTiles | limitTo:5"
+          ng-style="{
+            'background': tile.color,
+            'color': '#FFFFFF'
+          }"
+          md-colspan-gt-sm="{{tile.colspan}}"
+          md-rowspan-gt-sm="{{tile.rowspan}}">
+          <md-gridlist-item>
+            <span id="pname"><a ng-style="{'color':'#FFFFFF'}" href='#/posts/{{ tile.id }}'>{{ tile.title }}</a></span><br>
+            <span id="pdate">Published: {{ tile.date | date:'longDate'}}</span><br>
+            <span id="pauthor">By: {{ tile.author }}</span>
+          </md-gridlist-item>
+      </md-grid-tile>
+    </md-grid-list>
+  </md-content>
+</div>
+<script src="js/angular/angular.min.js"></script>
+<script src="js/angular/angular-animate.min.js"></script>
+<script src="js/angular/angular-aria.min.js"></script>
+<script src="js/angular/angular-material.min.js"></script>
+<script src="js/angular/angular-sanitize.min.js"></script>
+<script src="js/angular/angular-route.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+
