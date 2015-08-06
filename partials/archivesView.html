@@ -1,22 +1,15 @@
 <body ng-app="DataLogicIT">
-<div id="archives" ng-controller="PostsController">
+<div ng-controller="PostsController">
 <div layout="column" class="md-primary md-hue-2">
-  <div ng-repeat="post in posts">
-    <div id="pheader" layout="row" layout-align="space-between start" flex class="md-primary md-hue-2 md-padding">
-      <span id="pname"><a href="#/posts/"+{{post.id}}>{{ post.title }}</a></span>
-      <span id="pauthor">By: {{ post.author }}</span><br>
-      <span id="pdate">Published: {{ post.date | date:'longDate'}}</span><br>
+  <div ng-click="setRoute('/posts/'+post.id)" ng-repeat="post in posts">
+    <div layout="row" layout-align="space-between start" flex class="md-primary md-hue-2 md-padding">
+      <span>{{ post.title }}</span>
+      <span>By: {{ post.author }}</span><br>
+      <span>Published: {{ post.date | date:'longDate'}}</span><br>
     </div>
-    <div id="acontent" layout="column" ng-bind-html="post.excerpt"></div>
+    <div layout="column" ng-bind-html="post.excerpt"></div>
   </div>
 </div>
 </div>
-<script src="js/angular/angular.min.js"></script>
-<script src="js/angular/angular-animate.min.js"></script>
-<script src="js/angular/angular-aria.min.js"></script>
-<script src="js/angular/angular-material.min.js"></script>
-<script src="js/angular/angular-sanitize.min.js"></script>
-<script src="js/angular/angular-route.min.js"></script>
-<script src="js/app.js"></script>
 </body>
 

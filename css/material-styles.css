@@ -8,8 +8,8 @@
 }
 
 .md-toolbar-tools h1 {
-  font-size: inherit;
-  font-weight: inherit;
+  font-size: 40px;
+  font-weight: bold;
   margin: inherit;
 }
 .md-toolbar-tools img {
@@ -22,3 +22,8 @@
     height: auto;
     width: auto;
 }
+
+.more-link {
+  visibility: hidden;
+}
+

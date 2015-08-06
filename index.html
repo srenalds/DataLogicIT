@@ -6,33 +6,42 @@
     <meta name="viewport" content="initial-scale=1" />
   </head>
   <body layout="column" ng-controller="webAppController">
-    <md-toolbar md-scroll-shrink layout="row">
-      <div class="md-toolbar-tools">
-          <img src="img/DataLogicitLogo.png" alt="DataLogicIT" title="DataLogic Information Technologies"/>
+    <md-toolbar md-scroll-shrink layout="row" layout-align="space-between start">
+      <div class="md-toolbar-tools" layout="row" layout-align="space-between start">
+        <div>
+          <md-menu>
+            <md-button aria-label="About" class="md-icon-button" ng-click="$mdOpenMenu()">
+              <md-icon md-menu-origin md-svg-icon="img/icons/ic_menu_black_24px.svg"></md-icon>
+            </md-button>
+            <md-menu-content width="4">
+              <md-menu-item>
+                <md-button ng-click="setRoute('/')">
+                  <md-icon md-svg-icon="img/icons/ic_chevron_right_black_24px.svg" md-menu-align-target></md-icon>
+                  Home
+                </md-button>
+              </md-menu-item>
+              <md-menu-item>
+                    <md-button ng-click="setRoute('/archives')">
+                  <md-icon md-svg-icon="img/icons/ic_chevron_right_black_24px.svg"></md-icon>
+                  Archives
+                </md-button>
+              </md-menu-item>
+              <md-menu-item>
+                <md-button ng-click="setRoute('/about')">
+                  <md-icon md-svg-icon="img/icons/ic_chevron_right_black_24px.svg"></md-icon>
+                  About
+                </md-button>
+              </md-menu-item>
+            </md-menu-content>
+          </md-menu>
+        </div>
+        <img src="img/DataLogicitLogo.png" alt="DataLogicIT" show-gt-sm hide-sm title="DataLogic Information Technologies"/>
+        <h1 hide-gt-sm show-sm>DataLogicIT</h1>
         <md-button ng-click="toggleRight()" class="md-icon-button md-primary md-hue-2">
           <md-icon aria-label="Twitter Bar" md-svg-icon="img/icons/twitter.svg"></md-icon>
         </md-button>
       </div>
     </md-toolbar>
-      <div layout="column" layout-align="start start">
-      <md-menu>
-        <md-button aria-label="About Menu" class="md-icon-button" ng-click="$mdOpenMenu()">
-          <md-icon md-menu-origin md-svg-icon="img/icons/ic_chevron_right_black_24px.svg"></md-icon>ABOUT
-        </md-button>
-        <md-menu-content width="4">
-          <md-menu-item>
-            <md-button class="md-primary md-hue-2 md-raised" aria-label="About Menu">
-              <md-icon md-svg-icon="img/icons/ic_chevron_right_black_24px.svg" md-menu-align-target></md-icon>
-              DataLogicIT
-            </md-button><br>
-            <md-button class="md-primary md-hue-2 md-raised" aria-label="About Menu">
-              <md-icon md-svg-icon="img/icons/ic_chevron_right_black_24px.svg" md-menu-align-target></md-icon>
-              This Site 
-            </md-button>
-          </md-menu-item>
-        </md-menu-content>
-      </md-menu>
-    </div>
     <div layout="row" flex>
       <md-content layout="column" flex class="md-padding md-primary">
         <div ng-view></div>
