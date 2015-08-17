@@ -12,9 +12,15 @@
   font-weight: bold;
   margin: inherit;
 }
+
+.md-toolbar-tools h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: inherit;
+}
+
 .md-toolbar-tools img {
     text-align: center;
-    max-width: 98%;
     max-height: 80px;
     min-height: 40px;
     margin-left: auto;

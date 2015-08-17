@@ -35,8 +35,11 @@
             </md-menu-content>
           </md-menu>
         </div>
-        <img src="img/DataLogicitLogo.png" alt="DataLogicIT" show-gt-sm hide-sm title="DataLogic Information Technologies"/>
-        <h1 hide-gt-sm show-sm>DataLogicIT</h1>
+        <div ng-click="setRoute('/')">
+          <img src="img/DataLogicitLogo.png" alt="DataLogicIT" hide show-gt-md title="DataLogic Information Technologies"/>
+          <h1 hide-sm show-md hide-gt-md>DataLogicIT</h1>
+          <h2 show-sm hide-gt-sm>DataLogicIT</h1>
+        </div>
         <md-button ng-click="toggleRight()" class="md-icon-button md-primary md-hue-2">
           <md-icon aria-label="Twitter Bar" md-svg-icon="img/icons/twitter.svg"></md-icon>
         </md-button>
