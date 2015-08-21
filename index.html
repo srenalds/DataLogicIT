@@ -49,13 +49,12 @@
       <md-content layout="column" flex class="md-padding md-primary">
         <div ng-view></div>
       </md-content>
-      <md-sidenav layout="column" flex class="md-sidenav-right md-padding md-whiteframe-z5" md-component-id="right" md-is-locked-open="lockRight && $mdMedia('gt-lg')">
-        <md-content layout-padding>
-          <a class="twitter-timeline" data-widget-id="623500289316814848" ng-href="https://twitter.com/DataLogicIT" data-screen-name="DataLogicIT">Tweets by DataLogicIT</a>
-          <a class="twitter-follow-button" href="https://twitter.com/DataLogicIT" data-size="large">
-Follow @DataLogicIT</a>
+      <md-sidenav layout="column" flex class="md-sidenav-right md-padding md-whiteframe-z5" md-component-id="right" md-is-locked-open="lockRight && $mdMedia('gt-md')">
+        <md-content layout-padding layout-fill>
+          <a class="twitter-timeline" data-widget-id="631535848526196736" ng-href="https://twitter.com/SteveRenalds" data-screen-name="SteveRenalds">Tweets by SteveRenalds</a>
+          <a class="twitter-follow-button" ng-href="https://twitter.com/SteveRenalds" data-size="large">Follow @SteveRenalds</a>
           <p><b>For what can't be said in 140 characters: <script src="js/email.js"></script></b></p>
-          <md-button ng-click="toggleRight()" hide-gt-lg class="md-raised md-primary md-hue-2">Close</md-button>
+          <md-button ng-click="toggleRight()" hide-gt-md class="md-raised md-primary md-hue-2">Close</md-button>
         </md-content>
       </md-sidenav>
     </div>

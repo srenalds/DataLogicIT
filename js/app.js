@@ -24,6 +24,10 @@ app.config(['$routeProvider','$locationProvider',
   }
 ]);
 
+app.config(['$locationProvider', function($location) {
+  $location.hashPrefix('!');
+}]);
+
 app.config(function($mdThemingProvider) {
     $mdThemingProvider.theme('default')
       .primaryPalette('grey')

@@ -1,9 +1,11 @@
 <body ng-app="DataLogicIT">
-<div ng-controller="ViewPostController">
-  <div>
-    <span>{{ post.title.rendered }}</span>
-    <span>Published: {{ post.date | date:'longDate'}}</span>
-    <span>Written By: {{ authorName }}</span>
+<div id="postFrame" ng-controller="ViewPostController">
+  <div style="padding: 25px; text-align: left;">
+    <div flex layout="row" layout-align="space-between start">
+      <span class="md-title">{{ post.title.rendered }}</span>
+      <span class="md-title">Published: {{ post.date | date:'longDate'}}</span>
+    </div>
+    <span class="md-title">Written By: {{ authorName }}</span>
   </div>
   <div ng-bind-html="post.content.rendered">
   </div>

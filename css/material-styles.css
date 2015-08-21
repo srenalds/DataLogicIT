@@ -1,10 +1,19 @@
 .md-toolbar-tools {
-    background: #F1F1D4;
     border: 2px solid #676767;
     border-radius: 2px;
     min-height: 90px;
     padding: 5px;
     overflow: hidden;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d3d0bc+0,c9c190+40,b7ad70+100 */
+background: #d3d0bc; /* Old browsers */
+background: -moz-linear-gradient(top,  #d3d0bc 0%, #c9c190 40%, #b7ad70 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d3d0bc), color-stop(40%,#c9c190), color-stop(100%,#b7ad70)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #d3d0bc 0%,#c9c190 40%,#b7ad70 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #d3d0bc 0%,#c9c190 40%,#b7ad70 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #d3d0bc 0%,#c9c190 40%,#b7ad70 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #d3d0bc 0%,#c9c190 40%,#b7ad70 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d0bc', endColorstr='#b7ad70',GradientType=0 ); /* IE6-9 */
+
 }
 
 .md-toolbar-tools h1 {
@@ -33,3 +42,32 @@
   visibility: hidden;
 }
 
+#postFrame {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d3d0bc+0,c9c190+40,b7ad70+100 */
+background: #d3d0bc; /* Old browsers */
+background: -moz-linear-gradient(top,  #d3d0bc 0%, #c9c190 40%, #b7ad70 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d3d0bc), color-stop(40%,#c9c190), color-stop(100%,#b7ad70)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #d3d0bc 0%,#c9c190 40%,#b7ad70 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #d3d0bc 0%,#c9c190 40%,#b7ad70 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #d3d0bc 0%,#c9c190 40%,#b7ad70 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #d3d0bc 0%,#c9c190 40%,#b7ad70 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d0bc', endColorstr='#b7ad70',GradientType=0 ); /* IE6-9 */
+}
+#postContent {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9e9ce+0,fcfff4+100 */
+background: #e9e9ce; /* Old browsers */
+background: -moz-linear-gradient(top,  #e9e9ce 0%, #fcfff4 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e9e9ce), color-stop(100%,#fcfff4)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #e9e9ce 0%,#fcfff4 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #e9e9ce 0%,#fcfff4 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #e9e9ce 0%,#fcfff4 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #e9e9ce 0%,#fcfff4 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9ce', endColorstr='#fcfff4',GradientType=0 ); /* IE6-9 */
+}
+#postContent img {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 90%;
+}
