@@ -6,6 +6,10 @@ app.config(['$routeProvider','$locationProvider',
         templateUrl: 'partials/postsView.html',
         controller: 'PostsController'
     }).
+      when('/home', {
+        templateUrl: 'partials/postsView.html',
+        controller: 'PostsController'
+    }).
       when('/archives', {
         templateUrl: 'partials/archivesView.html',
         controller: 'PostsController'
@@ -72,7 +76,7 @@ app.controller('PostsController', ['$scope','$http','$route','$routeParams','$lo
           var authorId = response[i].author;
           var authorName = $scope.authors[authorId].name;
           p.push({
-            id: response[i].id,
+            route: "/posts/" + response[i].id,
             date: response[i].date,
             excerpt: response[i].excerpt.rendered,
             content: response[i].content.rendered,
@@ -87,7 +91,7 @@ app.controller('PostsController', ['$scope','$http','$route','$routeParams','$lo
 
 app.controller('AboutController', ['$scope','$http','$route','$routeParams','$location',
   function($scope, $http, $route, $routeParams, $location) {
-    $http.get("wp/wp-json/wp/v2/posts?tag='about'")
+    $http.get("wp/wp-json/wp/v2/posts?filter[tag]=about")
     .success(function(response) {
       $scope.posts = (function() {
       $scope.authors = { "1" : { "name" : "Steve Renalds" },

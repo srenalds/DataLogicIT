@@ -1,11 +1,11 @@
 <body ng-app="DataLogicIT">
 <div id="postFrame" ng-controller="PostsController">
 <md-tabs md-dynamic-height md-selected="selectedIndex" md-border-bottom class="md-primary md-hue-2">
-  <md-tab ng-repeat="post in posts | limitTo:5"
+  <md-tab ng-repeat="post in posts"
     label="{{post.title}}">
     <div style="padding: 25px; text-align: left;">
       <div flex layout="row" layout-align="space-between start">
-        <span class="md-title"><a ng-click="setRoute('/posts/'+post.id)">{{ post.title }}</a></span>
+        <span class="md-title"><a ng-click="setRoute(post.route)">{{ post.title }}</a></span>
         <span class="md-title">Published: {{ post.date | date:'longDate'}}</span>
       </div>
         <span class="md-title">By: {{ post.author }}</span>

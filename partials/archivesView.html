@@ -1,14 +1,14 @@
 <body ng-app="DataLogicIT">
 <div ng-controller="PostsController">
 <div id="postFrame" style="padding-left:10; padding-right:10;" layout="column" layout-fill>
-  <div ng-click="setRoute('/posts/'+post.id)" ng-repeat="post in posts">
-    <div layout="row" layout-align="space-between start" flex class="md-primary md-hue-2">
-      <div flex layout="row" layout-align="space-between start">
-        <span class="md-body-2">{{ post.title }}</span>
-        <span class="md-body-2">Date: {{ post.date | date:'longDate'}}</span>
+  <div ng-repeat="post in posts">
+    <div ng-click="setRoute(post.route)" layout="row" layout-align="space-between start" flex class="md-primary md-hue-2">
+      <div class="md-padding" flex layout="row" layout-align="space-between start">
+        <span class="md-title">{{ post.title }}</span>
+        <span class="md-title">Date: {{ post.date | date:'longDate'}}</span>
       </div>
     </div>
-    <div layout="column" class="md-body-1" ng-bind-html="post.excerpt"></div>
+    <div id="postContent" ng-click="setRoute(post.route)" layout="column" class="md-padding md-body-1" ng-bind-html="post.excerpt"></div>
   </div>
 </div>
 </div>
