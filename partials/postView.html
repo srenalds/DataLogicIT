@@ -3,9 +3,9 @@
   <div style="padding: 25px; text-align: left;">
     <div flex layout="row" class="md-padding" layout-align="space-between start">
       <span class="md-title">{{ post.title.rendered }}</span>
-      <span class="md-title">Published: {{ post.date | date:'longDate'}}</span>
+      <span hide show-md show-gt-md class="md-body-2">Published: {{ post.date | date:'longDate'}}</span>
     </div>
-    <span class="md-padding">Written By: {{ authorName }}</span>
+    <span class="md-body-2 md-padding">Written By: {{ authorName }}</span>
   </div>
   <div id="postContent" class="md-padding" ng-bind-html="post.content.rendered">
   </div>

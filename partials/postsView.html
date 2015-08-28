@@ -6,9 +6,9 @@
     <div style="padding: 25px; text-align: left;">
       <div flex layout="row" layout-align="space-between start">
         <span class="md-title"><a ng-click="setRoute(post.route)">{{ post.title }}</a></span>
-        <span class="md-title">Published: {{ post.date | date:'longDate'}}</span>
+        <span hide-sm class="md-body-2">Published: {{ post.date | date:'longDate'}}</span>
       </div>
-        <span class="md-title">By: {{ post.author }}</span>
+        <span class="md-body-2">By: {{ post.author }}</span>
       <div id="postContent" class="md-padding" ng-bind-html="post.content"></div>
     </div>
   </md-tab>
